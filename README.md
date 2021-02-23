@@ -1,8 +1,9 @@
-Part 1 (50%)
+# Part 1 (50%)
 _____________________________________________________________________________________________________________
 You are tasked with creating a sequential ring of 3 nodes.
 The initial node (rank 0) should use values 122 and 321 and pass the difference of the two hashes
 to the next node.
+
 Like so:
 HashInput1 = worldsWorstHash1(122) - worldsWorstHash2(321)
 HashInput2 = worldsWorstHash1(HashInput1) - worldsWorstHash2(HashInput1)
@@ -10,13 +11,14 @@ HashInput3 = worldsWorstHash1(HashInput2) - worldsWorstHash2(HashInput2)
 Print the final two hash values worldsWorstHash1(HashInput3) and
 worldsWorstHash2(HashInput3) to the console.
 Note: Any time a message is sent, output the message to the console.
+
 Expected output:
 Rank 0 sending: 134
 Rank 1 sending: -100
 Rank 2 sending: -330
 Result: hash1= -210, hash2= 142
 _____________________________________________________________________________________________________________
-Part 2 (50%)
+# Part 2 (50%)
 _____________________________________________________________________________________________________________
 You are to create an MPI program containing coordinator and participant nodes that will
 calculate the mean and then calculate the standard deviation of a set of numbers.
